@@ -1,0 +1,88 @@
+{
+	"name": "reminders",
+	"displayName": "Reminders",
+	"description": "Reminders",
+	"version": "1.0.0",
+	"publisher": "mrdoomy",
+	"icon": "assets/icon.png",
+	"galleryBanner": {
+		"color": "#fff8e1",
+		"theme": "light"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrdoomy/reminders.git"
+	},
+	"engines": {
+		"vscode": "^1.29.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"productivity",
+		"reminders"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "reminders.addReminder",
+				"title": "Add a new reminder"
+			},
+			{
+				"command": "reminders.clearReminders",
+				"title": "Clear all reminders"
+			},
+			{
+				"command": "reminders.showReminders",
+				"title": "Show all reminders"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Reminders Configuration",
+			"properties": {
+				"reminders.list": {
+					"type": "array",
+					"description": "List of reminders",
+					"default": []
+				},
+				"reminders.preserve": {
+					"type": "boolean",
+					"description": "Optional parameter that keeps the list of reminders",
+					"default": false
+				},
+				"reminders.shift": {
+					"type": "number",
+					"description": "Optional parameter to display the reminder before it's due time",
+					"default": 0
+				}
+			}
+		},
+		"keybindings": [
+			{
+				"command": "reminders.addReminder",
+				"key": "shift+alt+r"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	},
+	"license": "Beerware"
+}
