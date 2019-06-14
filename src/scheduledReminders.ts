@@ -1,5 +1,5 @@
 import { workspace } from 'vscode';
-import { getList, setList, getPreserve, showWarningMessage, getShift } from './utils';
+import { getList, setList, getPreserve, showWarningMessage, getShift, localize } from './utils';
 
 interface CheckerData {
   content: string;
@@ -8,10 +8,8 @@ interface CheckerData {
   timer?: any;
 }
 
-// Local Constants
 const FULL_REGEX = /(2[0-3]|[01]?[0-9]):([0-5][0-9])$/g;
 const HALF_REGEX = /(1[0-2]|0?[1-9])([ap]m)$/gi;
-const COMPLETED = 'Completed';
 
 /**
  * Clock Checker (Async)
@@ -44,9 +42,9 @@ async function clockChecker({ content, hours, minutes, timer }: CheckerData) {
         clearInterval(timer);
       }
 
-      const res = await showWarningMessage(content, COMPLETED);
+      const res = await showWarningMessage(content, localize('completed'));
       
-      if (res === COMPLETED) {
+      if (res === localize('completed')) {
         setList(getList().filter(item => item !== content));
       }
     }

@@ -1,0 +1,8 @@
+{
+	"extension.addReminder.title": "Ajouter un nouveau rappel",
+	"extension.clearReminders.title": "Supprimer tous les rappels",
+	"extension.showReminders.title": "Voir tous les rappels",
+  "extension.list.description": "Liste des rappels",
+  "extension.preserve.description": "Paramètre facultatif permettant de conserver l'état de la liste des rappels",
+  "extension.shift.description": "Paramètre facultatif permettant d'afficher le rappel avant son échéance"
+}

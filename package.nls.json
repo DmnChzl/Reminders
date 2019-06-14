@@ -1,0 +1,8 @@
+{
+	"extension.addReminder.title": "Add a new reminder",
+	"extension.clearReminders.title": "Clear all reminders",
+  "extension.showReminders.title": "Show all reminders",
+  "extension.list.description": "List of reminders",
+  "extension.preserve.description": "Optional parameter to keep the state of the list of reminders",
+  "extension.shift.description": "Optional parameter to display the reminder before it's due time"
+}

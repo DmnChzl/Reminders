@@ -1,0 +1,8 @@
+{
+	"extension.addReminder.title": "Añadir un nuevo recordatorio",
+	"extension.clearReminders.title": "Borrar todos los recordatorios",
+  "extension.showReminders.title": "Mostrar todos los recordatorios",
+  "extension.list.description": "Lista de recordatorios",
+  "extension.preserve.description": "Parámetro opcional para mantener el estado de la lista de recordatorios",
+  "extension.shift.description": "Parámetro opcional para mostrar el recordatorio antes de su vencimiento"
+}

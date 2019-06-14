@@ -25,6 +25,12 @@
 
 * `Shift + Alt + R` : Add a new reminder
 
+### Supported Languages
+
+- [x] English
+- [x] French
+- [x] Spanish
+
 ## [Change Log](./CHANGELOG.md)
 
 ## License

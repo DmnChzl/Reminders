@@ -1,22 +1,18 @@
 import { commands } from 'vscode';
-import { setList, showInformationMessage, showWarningMessage } from '../utils';
+import { setList, showInformationMessage, showWarningMessage, localize } from '../utils';
 import { EXTENSION, CLEAR_REMINDERS } from '../constants';
 
-// Local Constants
-const WARNING = 'Do you want to clear all reminders ?';
-const YES = 'Yes';
-const NO = 'No';
-const DONE = 'Done.';
+const OPTIONS = [localize('yes'), localize('no')];
 
 /**
  * Command: Clear All Reminders
  */
 export function clearReminders() {
   return commands.registerCommand(`${EXTENSION}.${CLEAR_REMINDERS}`, async () => {
-    const res = await showWarningMessage(WARNING, YES, NO);
+    const res = await showWarningMessage(localize('clear_all_reminders'), ...OPTIONS);
 
-    if (res === YES) {
-      setList([]).then(() => showInformationMessage(DONE));
+    if (res === localize('yes')) {
+      setList([]).then(() => showInformationMessage(localize('done')));
     }
   });
 }

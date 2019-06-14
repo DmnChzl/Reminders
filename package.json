@@ -2,7 +2,7 @@
 	"name": "reminders",
 	"displayName": "Reminders",
 	"description": "Reminders",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "mrdoomy",
 	"icon": "assets/icon.png",
 	"galleryBanner": {
@@ -31,15 +31,15 @@
 		"commands": [
 			{
 				"command": "reminders.addReminder",
-				"title": "Add a new reminder"
+				"title": "%extension.addReminder.title%"
 			},
 			{
 				"command": "reminders.clearReminders",
-				"title": "Clear all reminders"
+				"title": "%extension.clearReminders.title%"
 			},
 			{
 				"command": "reminders.showReminders",
-				"title": "Show all reminders"
+				"title": "%extension.showReminders.title%"
 			}
 		],
 		"configuration": {
@@ -48,17 +48,17 @@
 			"properties": {
 				"reminders.list": {
 					"type": "array",
-					"description": "List of reminders",
+					"description": "%extension.list.description%",
 					"default": []
 				},
 				"reminders.preserve": {
 					"type": "boolean",
-					"description": "Optional parameter that keeps the list of reminders",
+					"description": "%extension.preserve.description%",
 					"default": false
 				},
 				"reminders.shift": {
 					"type": "number",
-					"description": "Optional parameter to display the reminder before it's due time",
+					"description": "%extension.shift.description%",
 					"default": 0
 				}
 			}
@@ -74,15 +74,17 @@
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "yarn run compile && node ./node_modules/vscode/bin/test"
+		"postinstall": "node ./node_modules/vscode/bin/install"
+	},
+	"dependencies": {
+		"vscode-nls": "^4.1.1"
 	},
 	"devDependencies": {
-		"typescript": "^3.3.1",
-		"vscode": "^1.1.28",
-		"tslint": "^5.12.1",
-		"@types/node": "^10.12.21",
-		"@types/mocha": "^2.2.42"
+		"@types/node": "^12.0.8",
+		"tslint": "^5.17.0",
+		"typescript": "^3.5.2",
+		"vscode": "^1.1.34",
+		"vscode-nls-dev": "^3.2.6"
 	},
 	"license": "Beerware"
 }
