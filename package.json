@@ -2,7 +2,7 @@
 	"name": "reminders",
 	"displayName": "Reminders",
 	"description": "Reminders",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"publisher": "mrdoomy",
 	"icon": "assets/icon.png",
 	"galleryBanner": {

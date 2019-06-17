@@ -7,3 +7,7 @@
 ## [1.1.0]
 
 - Internationalization
+
+### [1.1.1]
+
+- Optimize Performance
