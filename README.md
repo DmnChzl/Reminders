@@ -13,7 +13,7 @@
 4. Wait... If your reminder contains the pattern `12am`, `6pm`, `20:45` or `8h15`, it will be displayed in due time !
 5. Also you can clear all reminders, or close and re-open your IDE for wiping the list.
 
-**Enjoy !**
+**Enjoy !** =)
 
 ### Extension Settings
 
