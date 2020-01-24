@@ -80,11 +80,11 @@
 		"vscode-nls": "^4.1.1"
 	},
 	"devDependencies": {
-		"@types/node": "^12.0.8",
-		"tslint": "^5.17.0",
-		"typescript": "^3.5.2",
-		"vscode": "^1.1.34",
-		"vscode-nls-dev": "^3.2.6"
+		"@types/node": "^12.12.25",
+		"tslint": "^5.20.1",
+		"typescript": "^3.5.3",
+		"vscode": "^1.1.36",
+		"vscode-nls-dev": "^3.3.1"
 	},
 	"license": "Beerware"
 }
