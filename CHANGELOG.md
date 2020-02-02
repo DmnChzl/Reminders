@@ -11,3 +11,7 @@
 ### [1.1.1]
 
 - Optimize Performance
+
+### [1.1.2]
+
+- Upgrade Dependencies
