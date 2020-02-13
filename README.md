@@ -31,7 +31,7 @@
 - [x] French
 - [x] Spanish
 
-## [Change Log](./CHANGELOG.md)
+## [ChangeLog](./CHANGELOG.md)
 
 ## License
 
