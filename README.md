@@ -7,7 +7,7 @@
 
 ## Usage
 
-1. Install the extension [here](https://marketplace.visualstudio.com/items?itemName=mrdoomy.reminders) ;
+1. Install the extension [here](https://marketplace.visualstudio.com/items?itemName=dmnchzl.reminders) ;
 2. Add a new reminder (see *Key Bindings* section) ;
 3. Show all reminders (by clicking on the status bar item) ;
 4. Wait... If your reminder contains the pattern `12am`, `6pm`, `20:45` or `8h15`, it will be displayed in due time !

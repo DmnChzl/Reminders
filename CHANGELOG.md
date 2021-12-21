@@ -15,3 +15,7 @@
 ### [1.1.2]
 
 - Upgrade Dependencies
+
+### [1.1.3]
+
+- Miscellaneous Update
